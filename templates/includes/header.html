@@ -15,15 +15,16 @@
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                     <li class="nav-item dropdown">
-                                        <a class="nav-link active" href="#">Home</a>
+                                        <a class="nav-link {% if url_name == 'conctact' %} active {% endif %}" href="#">Home</a>                                       
+                                    </li>
+                                     <li class="nav-item dropdown">
+                                        <a class="{% if url_name == 'add-work' %} nav-link active {% endif %}" href="{% url 'add-work' %}">Task</a>
                                     </li>
                                     <li class="nav-item dropdown">
-                                        <a class="nav-link" href="#">Services</a>
+                                        <a class="{% if url_name == 'service' %} nav-link active {% endif %}" href="{% url 'services' %}">Services</a>
                                     </li>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link" href="#">Portfolio</a>
-                                    </li>
-                                    <li class="nav-item dropdown">
+                                   
+                                    {% comment %} <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                             data-bs-toggle="dropdown" aria-expanded="false">
                                             Pages
@@ -39,13 +40,17 @@
                                                    <li><a class="dropdown-item" href="about-us.html">About Us</a></li>
                                                     <li><a class="dropdown-item" href="about-us.html">About Us</a></li>
                                         </ul>
-                                    </li>
+                                    </li> {% endcomment %}
                                     <li class="nav-item dropdown">
                                         <a class="nav-link" href="#">Blog</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="contact.html">Contacts</a>
+                                        <a class="nav-link" href="{% url 'about-us' %}">About Us </a>
                                     </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{% url 'contact' %}">Contacts Us</a>
+                                    </li>
+
                                 </ul>
                                 <div class="button">
                                     <a href="contact.html" class="btn">Get it now</a>
