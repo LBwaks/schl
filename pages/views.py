@@ -1,9 +1,14 @@
 from django.shortcuts import render
-from django.views.generic import ListView,CreateView
+from django.views.generic import ListView,CreateView,TemplateView
 from service.models import Service
 from .models import Contact
 from .forms import ContactForm
 # Create your views here.
+
+
+class HomeView(TemplateView):
+    template_name = "pages/home.html"
+
 
 class AboutListView(ListView):
     model = Service

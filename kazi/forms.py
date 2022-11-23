@@ -15,7 +15,7 @@ class KaziForm(forms.ModelForm):
     
     class Meta:
         model = Kazi
-        fields = ['course','work','unit','description','due']
+        fields = ['course','work','unit','description','due','terms']
         labels ={
             'course':'Course Name',
             'work':'Type Of Work',
@@ -30,6 +30,7 @@ class KaziForm(forms.ModelForm):
             'unit':forms.TextInput(attrs={'class':'form-control unit''required'}),
             'description':forms.CharField(widget=CKEditorWidget()),
             'due': forms.DateInput(format=('%Y-%m-%d %H:%M'), attrs={'class': 'form-control due ','type': 'datetime-local' }),
+            'terms':forms.CheckboxInput(attrs={'class':'form-control terms''required'})
         }
         # 'application_deadline': forms.DateInput(format=('%Y-%m-%d %H:%M'), attrs={'class': 'form-control application_deadline ','placeholder': 'Select a date','type': 'datetime-local' }),
         #     'job_done_date': forms.DateInput(format=('%Y-%m-%d %H:%M'), attrs={'class': 'form-control job_done_date ','placeholder ': 'Select a date','type': 'datetime-local' }),

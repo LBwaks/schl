@@ -13,7 +13,9 @@ class CategoryAdmin(admin.ModelAdmin):
              
 @admin.register(Service)
 class ServiceAdmin(admin.ModelAdmin):
-    list_display =('title','category','description','image')
+    list_display =('title','category','description'
+                #    ,'image'
+                   )
     def save_model(self, request, obj, form, change):
         if not obj.user_id:
             obj.user = request.user

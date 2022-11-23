@@ -4304,13 +4304,6 @@ ol {
   background-color: #fff;
 }
 
-.contact-us .title {
-  margin-bottom: 30px;
-}
-
-.contact-us .contant-inner-title {
-  margin-bottom: 45px;
-}
 
 .contact-us .single-head {
   position: relative;
@@ -4446,4 +4439,40 @@ ol {
 
 /*======================================
 	End Contact CSS
+========================================*/
+
+/*======================================
+	Start work CSS
+========================================*/
+.work {
+  position: relative;
+  background-color: #F4F7FA;
+}
+
+.work .inner-title {
+  font-size: 20px;
+  font-weight: 600;
+  border-bottom: 1px dashed #473BF0;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+}
+
+.work .inner-content {
+  padding: 50px;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.work .kazi_form .button {
+  margin: 0;
+}
+
+.work .kazi_form .button .btn {
+  height: 50px;
+  border: none;
+}
+
+/*======================================
+	End work CSS
 ========================================*/

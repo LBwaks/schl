@@ -49,12 +49,23 @@ class Course(models.Model):
     
     def __str__(self):
         return self.title
-
+    
+class EducationLevel(models.Model):
+    user = models.ForeignKey(User, editable= False, related_name='user_education',on_delete=models.CASCADE,null = False)
+    level = models.CharField(_("Education Level "), max_length=50)
+    slug = AutoSlugField(populate_from='level',slugify_function = my_slugify_function)
+    description =models.TextField(_("About EDucation Level "))
+    is_published =models.BooleanField(default =False)
+    created_date =models.DateTimeField( auto_now_add=True)
+    
+    def __str__(self):
+        return self.level
 
 class Kazi(models.Model):
     user = models.ForeignKey(User, editable= False, related_name='user_kazi',on_delete=models.CASCADE,null = False)
     kazi_id = models.CharField(_("kazi_id"), max_length=50,blank=True)
     slug = models.UUIDField(default=uuid.uuid4,editable= False)
+    level = models.ForeignKey(EducationLevel, verbose_name=_("Education Level"), on_delete=models.CASCADE)
     course = models.ForeignKey(Course, verbose_name=_("Course"), on_delete=models.CASCADE)
     work = models.ForeignKey(WorkType, verbose_name=_("Work Type"), on_delete=models.CASCADE)
     unit = models.CharField(_("Unit Name"), max_length=50)

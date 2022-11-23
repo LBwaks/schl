@@ -22,7 +22,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('kazi/',include('kazi.urls')),
     path('service/',include('service.urls')),
-    path('pages/',include('pages.urls')),
+    path('',include('pages.urls')),
+    path('ckeditor/', include('ckeditor_uploader.urls')),
 ]
 if settings.DEBUG :
     urlpatterns += static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)

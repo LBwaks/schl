@@ -32,6 +32,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -150,6 +152,7 @@ STATICFILES_DIRS = [
 ]
 
 # media 
+CKEDITOR_UPLOAD_PATH = "ckeditor/"
 MEDIA_ROOT = os.path.join(BASE_DIR /'media')
 MEDIA_URL = '/media/'
 

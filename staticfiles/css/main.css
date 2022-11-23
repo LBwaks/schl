@@ -876,13 +876,13 @@ ol {
 
 /* Bread Crumbs */
 .breadcrumbs {
-  background-image: url("../images/breadcrumb/breadcrumb-bg.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-  padding: 180px 0;
-  padding-top: 260px;
+  /* background-image: url("../images/breadcrumb/breadcrumb-bg.jpg"); */
+  /* background-size: cover; */
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
+  /* position: relative; */
+  padding: 10px 0;
+  padding-top: 120px;
   z-index: 2;
   overflow: hidden;
 }
@@ -2102,6 +2102,131 @@ ol {
   margin-bottom: 70px;
 }
 
+.services.style2 .single-service {
+  padding: 40px 30px;
+  padding-bottom: 50px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 50px rgba(87, 87, 87, 0.23);
+          box-shadow: 0px 0px 50px rgba(87, 87, 87, 0.23);
+  border: none;
+  border-radius: 10px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  overflow: hidden;
+  position: relative;
+  margin-top: 30px;
+}
+
+.services.style2 .single-service::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 0%;
+  background-color: #473BF0;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.services.style2 .single-service:hover::before {
+  width: 100%;
+}
+
+.services.style2 .single-service img {
+  margin-bottom: 20px;
+}
+
+.services.style2 .single-service p {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 15px;
+}
+
+.services.style2 .single-service .more {
+  color: #081828;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 30px;
+}
+
+.services.style2 .single-service .more i {
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 15px;
+  position: relative;
+  top: 2px;
+}
+
+.services.style2 .single-service .more:hover {
+  letter-spacing: 1px;
+  color: #473BF0;
+}
+
+.services.style3 .section-title {
+  margin-bottom: 70px;
+}
+
+.services.style3 .single-service {
+  position: relative;
+  text-align: left;
+  padding: 50px;
+  -webkit-box-shadow: 0px 0px 30px rgba(138, 138, 138, 0.23);
+          box-shadow: 0px 0px 30px rgba(138, 138, 138, 0.23);
+  border-radius: 5px;
+  border: 1px solid #eee;
+  background-color: #fff;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.services.style3 .single-service::before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 0%;
+  content: "";
+  background-color: #473BF0;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.services.style3 .single-service:hover {
+  -webkit-box-shadow: 0px 10px 50px rgba(116, 116, 116, 0.23);
+          box-shadow: 0px 10px 50px rgba(116, 116, 116, 0.23);
+}
+
+.services.style3 .single-service:hover::before {
+  width: 100%;
+}
+
+.services.style3 .single-service .serial {
+  font-size: 45px;
+  display: block;
+  margin-bottom: 7px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: #473BF0;
+  font-weight: 800;
+}
+
+.services.style3 .single-service:hover .serial {
+  -webkit-text-stroke-color: transparent;
+  -webkit-text-fill-color: #473BF0;
+}
+
+.services.style3 .single-service p {
+  font-weight: 400;
+  font-size: 13px;
+  color: #888;
+}
+
+.services.style3 .single-service .button {
+  margin-top: 30px;
+}
+
 .services .single-head {
   position: relative;
 }
@@ -2118,7 +2243,7 @@ ol {
 
 .single-service:hover {
   -webkit-box-shadow: 0 32px 54px 0 rgba(22, 28, 45, 0.16);
-  box-shadow: 0 32px 54px 0 rgba(22, 28, 45, 0.16);
+          box-shadow: 0 32px 54px 0 rgba(22, 28, 45, 0.16);
   background-color: #fff;
 }
 
@@ -2152,6 +2277,263 @@ ol {
   color: #888;
   line-height: 24px;
   margin-top: 25px;
+}
+
+/* Service Details */
+.service-details .content {
+  padding: 100px 0;
+}
+
+.service-details .content img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.service-details .content .thumb {
+  margin-bottom: 40px;
+}
+
+.service-details .content .title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #eee;
+}
+
+.service-details .content .sub-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 25px 0;
+}
+
+.service-details .content p {
+  display: block;
+  margin: 20px 0;
+  line-height: 24px;
+}
+
+.service-details .content p:last-child {
+  margin-bottom: 0;
+}
+
+.service-details .content .list {
+  margin: 40px 0;
+  padding-left: 30px;
+}
+
+.service-details .content .list li {
+  display: block;
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 32px;
+}
+
+.service-details .content .list li:last-child {
+  margin-bottom: 0;
+}
+
+.service-details .content .list li i {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #fff;
+  font-size: 7px;
+  height: 18px;
+  width: 18px;
+  background: #473BF0;
+  text-align: center;
+  line-height: 18px;
+  border-radius: 50%;
+}
+
+.service-details .accordion {
+  margin-top: 40px;
+}
+
+.service-details .accordion-body p {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.service-details .accordion-body p:last-child {
+  margin: 0;
+}
+
+.extra-page {
+  padding-bottom: 70px;
+}
+
+.extra-page .single-service {
+  margin-bottom: 30px;
+}
+
+/* Service Sidebar */
+.service-sidebar .single-widget {
+  margin-bottom: 30px;
+  position: relative;
+  padding: 40px;
+  border-radius: 5px;
+  background-color: #F4F7FA;
+}
+
+.service-sidebar .single-widget h3 {
+  font-size: 17px;
+  font-weight: 600;
+  color: #081828;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px dashed #473BF0;
+}
+
+.service-sidebar .single-widget:last-child {
+  margin: 0;
+}
+
+.service-sidebar .search-widget {
+  position: relative;
+}
+
+.service-sidebar .search-widget form {
+  position: relative;
+}
+
+.service-sidebar .search-widget form input {
+  width: 100%;
+  background-color: transparent;
+  height: 55px;
+  border: none;
+  padding: 0 70px 0 20px;
+  font-size: 14px;
+  font-weight: 400;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #081828;
+}
+
+.service-sidebar .search-widget form input::-webkit-input-placeholder {
+  color: #333;
+}
+
+.service-sidebar .search-widget form input:-ms-input-placeholder {
+  color: #333;
+}
+
+.service-sidebar .search-widget form input::-ms-input-placeholder {
+  color: #333;
+}
+
+.service-sidebar .search-widget form input::placeholder {
+  color: #333;
+}
+
+.service-sidebar .search-widget form button {
+  position: absolute;
+  right: 9px;
+  top: 50%;
+  width: 40px;
+  height: 38px;
+  z-index: 1;
+  color: #fff !important;
+  font-size: 13px;
+  -webkit-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  color: #fff;
+  border-radius: 5px;
+  padding: 0 !important;
+  border: none;
+  margin-top: -19px;
+  background: #473BF0;
+}
+
+.service-sidebar .search-widget form button:hover {
+  background-color: #081828;
+  color: #fff;
+}
+
+.service-sidebar .service-category li {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.service-sidebar .service-category li:last-child {
+  margin-bottom: 0;
+}
+
+.service-sidebar .service-category li a {
+  padding: 15px 20px;
+  background-color: #fff;
+  color: #081828;
+  font-weight: 500;
+  display: block;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  position: relative;
+  padding-right: 40px;
+}
+
+.service-sidebar .service-category li a i {
+  float: right;
+  font-size: 17px;
+  position: absolute;
+  top: 0;
+  right: 20px;
+  height: 18px;
+  top: 50%;
+  margin-top: -9px;
+}
+
+.service-sidebar .service-category li a:hover {
+  background-color: #473BF0;
+  color: #fff;
+  border-color: transparent;
+}
+
+.service-sidebar .download {
+  background-color: #F4F7FA;
+  padding: 35px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+}
+
+.service-sidebar .download li {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.service-sidebar .download li:last-child {
+  margin-bottom: 0;
+}
+
+.service-sidebar .download li a {
+  padding: 15px 20px;
+  background-color: #fff;
+  color: #081828;
+  font-weight: 500;
+  display: block;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  position: relative;
+  padding-right: 40px;
+}
+
+.service-sidebar .download li a i {
+  float: right;
+  font-size: 17px;
+  position: absolute;
+  top: 0;
+  right: 20px;
+  height: 18px;
+  top: 50%;
+  margin-top: -9px;
+}
+
+.service-sidebar .download li a:hover {
+  background-color: #473BF0;
+  color: #fff;
+  border-color: transparent;
 }
 
 /*======================================
@@ -3796,3 +4178,301 @@ ol {
   background-color: #fff;
   color: #473BF0;
 }
+
+
+/*======================================
+    Why Choose CSS
+========================================*/
+.why-choose {
+  background-color: #F4F7FA;
+}
+
+.why-choose .left {
+  position: relative;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.why-choose .left img {
+  width: 100%;
+  height: 100%;
+}
+
+.why-choose .left .video {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  line-height: 80px;
+  text-align: center;
+  color: #473BF0;
+  background-color: #fff;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  margin-left: -40px;
+  margin-top: -40px;
+  font-size: 16px;
+  padding-left: 3px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.why-choose .left .video:hover {
+  color: #fff;
+  background-color: #473BF0;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.why-choose .right {
+  padding-left: 50px;
+  padding-right: 130px;
+}
+
+.why-choose .right ul li {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.why-choose .right ul li:hover .number {
+  border-color: #473BF0;
+  color: #473BF0;
+  background-color: #fff;
+}
+
+.why-choose .right ul li:last-child {
+  margin: 0;
+}
+
+.why-choose .right ul li .number {
+  max-width: 43px;
+  min-width: 43px;
+  max-height: 43px;
+  min-height: 43px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #473BF0;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 3px solid transparent;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.why-choose .right ul li .content {
+  display: inline-block;
+  padding-left: 70px;
+}
+
+.why-choose .right ul li .content h3 {
+  font-size: 19px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 20px;
+}
+
+/*======================================
+	Contact CSS
+========================================*/
+.contact-us {
+  position: relative;
+  background-color: #F4F7FA;
+}
+
+.contact-us .inner-title {
+  font-size: 20px;
+  font-weight: 600;
+  border-bottom: 1px dashed #473BF0;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+}
+
+.contact-us .inner-content {
+  padding: 50px;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+
+.contact-us .single-head {
+  position: relative;
+  z-index: 5;
+}
+
+.contact-us .single-info {
+  text-align: left;
+  margin-bottom: 30px;
+  padding-left: 70px;
+  position: relative;
+}
+
+.contact-us .single-info i {
+  font-size: 18px;
+  display: inline-block;
+  margin-right: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 50px;
+  width: 50px;
+  display: block;
+  text-align: center;
+  background: #473BF0;
+  color: #fff;
+  line-height: 50px;
+  border-radius: 5px;
+}
+
+.contact-us .single-info ul {
+  display: inline-block;
+}
+
+.contact-us .single-info ul span {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.contact-us .single-info ul li:last-child {
+  margin-bottom: 0;
+}
+
+.contact-us .single-info ul li {
+  font-weight: 500;
+  display: inline-block;
+  font-size: 13px;
+  color: #081828;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.contact-us .single-info ul li a {
+  font-weight: 500;
+  display: inline-block;
+  font-size: 13px;
+  color: #081828;
+}
+
+.contact-us .single-info ul li a:hover {
+  color: #473BF0;
+}
+
+.contact-us .single-info .title {
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #fff;
+  font-size: 18px;
+}
+
+.contact-us .single-info .title span {
+  display: block;
+  font-size: 14px;
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+.contact-us .form-main {
+  margin-right: 50px;
+}
+
+.contact-us .form .form-group {
+  margin-bottom: 15px;
+  display: block;
+}
+
+.contact-us .form .form-group input {
+  height: 55px;
+  line-height: 55px;
+  width: 100%;
+  border: 1px solid #e6e2f5;
+  padding: 0px 20px;
+  color: #333;
+  border-radius: 0px;
+  font-weight: 400;
+  border-radius: 5px;
+}
+
+.contact-us .form .form-group textarea {
+  height: 180px;
+  width: 100%;
+  border: 1px solid #e6e2f5;
+  padding: 15px 20px;
+  color: #333;
+  border-radius: 0px;
+  resize: none;
+  font-weight: 400;
+  border-radius: 5px;
+}
+
+.contact-us .form .button {
+  margin: 0;
+}
+
+.contact-us .form .button .btn {
+  height: 50px;
+  border: none;
+}
+
+.map-section {
+  background-color: #fff;
+}
+
+.map-section .map-container {
+  -webkit-box-shadow: 0 10px 30px rgba(111, 111, 111, 0.1);
+          box-shadow: 0 10px 30px rgba(111, 111, 111, 0.1);
+  padding: 20px;
+  border-radius: 7px;
+}
+
+/*======================================
+	End Contact CSS
+========================================*/
+
+/*======================================
+	Start work CSS
+========================================*/
+.work {
+  position: relative;
+  background-color: #F4F7FA;
+}
+
+.work .inner-title {
+  font-size: 20px;
+  font-weight: 600;
+  border-bottom: 1px dashed #473BF0;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+}
+
+.work .inner-content {
+  padding: 50px;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.work .kazi_form .button {
+  margin: 0;
+}
+
+.work .kazi_form .button .btn {
+  height: 50px;
+  border: none;
+}
+
+/*======================================
+	End work CSS
+========================================*/
