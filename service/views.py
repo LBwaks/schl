@@ -12,6 +12,7 @@ class ServiceListView(ListView):
 class ServiceDetailView(DetailView):
     model = Service
     template_name = "services/service-detail.html"
+    
     def get_context_data(self, **kwargs):        
         context = super(ServiceDetailView,self).get_context_data(**kwargs)
         service =get_object_or_404(Service, slug=self.kwargs['slug'])

@@ -4476,3 +4476,37 @@ ol {
 /*======================================
 	End work CSS
 ========================================*/
+
+/*======================================
+	table CSS
+========================================*/
+/* .table thead {
+  display: none;
+}
+.table,.table tbody, .table tr, .table td {
+  display: block;
+}
+.table tr {
+  margin-bottom: 15px;
+  border: 1px solid #111;
+  border-radius: 3px;
+}
+.tabe td {
+  margin-bottom: right;
+  padding-left: 35%;
+  position: relative;
+  border: 1px solid transparent;
+
+}
+.table td::before{
+content:attr(label);
+position: absolute;
+left:0;
+width :50%;
+padding-left: 15px;
+font-size: 30px;
+font-weight: bold;
+text-align: left;
+} */
+
+/* .table  */

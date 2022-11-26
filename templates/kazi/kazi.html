@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+
+{% block title %} Add kazi {% endblock title %}
+{% load crispy_forms_tags %}
+{% load static %}
+{% load humanize%}
+{% block content %}
+<div class="breadcrumbs overlay">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-lg-6 col-md-6 col-12">
+<div class="breadcrumbs-content">
+<h1 class="page-title">Add Task</h1>
+
+</div>
+</div>
+<div class="col-lg-6 col-md-6 col-12">
+<ul class="breadcrumb-nav">
+<li><a href="index.html">Home</a></li>
+<li>Add Task</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<br>    
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <table id="kazi_table" class="table table-borderless table-hover dt-responsive nowrap "  style="width:100%">
+        <thead class="table-success">
+            <tr>
+                <th>Kazi Id </th>
+                {% comment %} <th>Education Level</th> {% endcomment %}
+                <th>Course</th>
+                <th>Work Type</th>
+                {% comment %} <th>Unit Name</th> {% endcomment %}
+                <th>Status</th>
+                <th>Assignee</th>
+                {% comment %} <th>ussr</th> {% endcomment %}
+                <th>Time Due</th>
+                <th>Assign</th>
+            </tr>
+        </thead>
+        <tbody>
+
+{% for kazi in object_list %}
+   
+
+            <tr>
+                <td class="table-secondary">{{kazi.job_id}}</td>
+                {% comment %} <td>{{kazi.level}}</td> {% endcomment %}
+                <td>{{kazi.course}}</td>
+                <td class="table-warning">{{kazi.work}}</td>
+                {% comment %} <td>{{kazi.unit}}</td> {% endcomment %}
+                
+                <td>{{kazi.status}}</td>
+                <td>bwaks</td>
+                    {% comment %} <td>{{kazi.user}}</td> {% endcomment %}
+                <td class="table-danger">{{kazi.due| naturaltime}}</td>
+                <td >
+                    {% comment %} <a href="{% url 'assign' kazi.id %}"  class="btn btn-outline-success btn-sm">Assign</a>
+                <br>   {% endcomment %}
+                 <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+  <a href="{% url 'assign' kazi.id %}" class="btn btn-sm btn-outline-danger">View</a>
+  <a href="{% url 'assign' kazi.id %}" class="btn btn-sm btn-outline-warning">Assign</a>
+  <a href="{% url 'assign' kazi.id %}" class="btn btn-sm btn-outline-success">Reassign</a>
+</div>
+</td>
+            </tr>
+            
+        
+        
+{% endfor %}
+</tbody>
+        <tfoot>
+            <tr>
+                <th>Kazi Id </th>
+                {% comment %} <th>Education Level</th> {% endcomment %}
+                <th>Course</th>
+                <th>Work Type</th>
+                {% comment %} <th>Unit Name</th> {% endcomment %}
+                <th>Status</th>
+                <th>Assignee</th>
+                <th>Time Due</th>
+                <th>Assign</th>
+            </tr>
+        </tfoot>
+    </table>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+    
+    
